@@ -1,0 +1,125 @@
+html{
+    width: 840px;
+    align-self: center;
+}
+
+body{    
+    font-family: arial, sans-serif;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5{
+    color: #b28b7a;
+}
+
+#header{
+    background-color: black;
+    margin-top: 0px;
+    width: 100%;
+}
+#logo_text{
+    background-color: #1d1d1d;
+}
+#menu{
+    margin-top: 0px;
+    padding-top: 9px;
+    padding-left: 278px;
+}
+#logo{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 0%;
+}
+#menubar{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 0%;
+    background-color: #2d2d2d;
+    height: 42px;
+}
+#menu li{
+    display: inline;
+    margin-left: 15px;
+}
+#menu a{
+    font-size: 9px;
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 7px;
+    text-decoration : none;
+    background-color: #5e4237;
+    color: white;
+}
+#menu a:hover{
+    background-color: #b48a7c;
+}
+
+#titulo01{
+    color: white;
+    font-size: 25px;
+}
+#subtitulo01{
+    font-size: 10px;
+    margin-bottom: 0;
+}
+
+#banner{
+    width: 774px;
+    height: 161px;
+    border: 9px solid #dddddd;
+    margin-left: 34px;
+    margin-top: 18px;
+}
+
+#sidebar_container{
+    float:left;
+}
+#sidebar_item_id{
+    width: 200px;
+    margin-left: 34px;
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+#noticias{
+    width: 200px;
+    height: 445px;
+    margin-left: 34px;
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+#noticiasTitulo{
+    color: black;
+    font-size: 14px;
+}
+#noticiasTitulo2{
+    font-size: 11PX;
+    margin-bottom: 0px;
+}
+#noticiasFecha{
+    color: #5e4237;
+    font-size: 11px;
+    margin-top: 2px;
+}
+#noticiasTexto{
+    font-size: 16px;
+}
+#content{
+    margin-left: 290px;
+}
+#footer{
+    float:left;
+    margin-top:10px;
+    text-align:center;
+    background-color: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+ul{
+    list-style: url(../img/bullet.png);
+}

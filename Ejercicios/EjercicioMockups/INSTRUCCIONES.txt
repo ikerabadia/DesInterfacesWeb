@@ -1,0 +1,15 @@
+1º COMPETENCIA
+- 3 webs
+- diferencias
+- conclusion
+DEBE INCLUIR
+- pagina inicio
+- pagina de 1er nivel
+- pagina de 2º nivel
+- registro
+- contacto
+- cookies y politica privacidad
+MOCKUPS PROGRAMAS
+- pencil 
+- balsamic
+- wireframe

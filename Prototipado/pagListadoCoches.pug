@@ -1,0 +1,87 @@
+.cabecera 
+    a(href="./prueba1.html")
+        img(src='img/logo.PNG' style="float: left;")
+    h1(style="float: left;") TRADECAR 
+    .loginRegisterVender(style="float: right")
+        a(style="border: 1px solid black;") login     
+        a(style="margin-right: 10px; border: 1px solid black;") register
+        a(style="margin-top: 20px; border: 1px solid black;") vender
+.filtros 
+    table(width="100%", border='1')
+        tr
+            td(colspan="2" width="100%")
+                input(type='text' name='buscador' placeholder='buscador' width="100%")
+        tr 
+            td(width="50%")    
+                select(name="marca" width="100%") 
+                    option(value="marca") marca
+                    option(value="marca1") marca1
+                    option(value="marca2") marca2
+                    option(value="marca3") marca3
+                    option(value="marca4") marca4
+                    option(value="marca5") marca5
+            td(width="50%")
+                select(name="tipoCambio" width="100%") 
+                    option(value="Tipo de cambio") Tipo de cambio
+                    option(value="Automatico") Automatico
+                    option(value="Manual") 
+        tr 
+            td(width="50%") 
+                select(name="modelo" width="100%") 
+                    option(value="Modelo") Modelo
+                    option(value="Modelo1") Modelo1
+                    option(value="Modelo2") Modelo2
+                    option(value="Modelo3") Modelo3
+                    option(value="Modelo4") Modelo4
+                    option(value="Modelo5") Modelo5
+            td(width="50%")
+                select(name="potencia" width="100%") 
+                    option(value="Potencia") Potencia
+                    option(value="100cv") 100cv
+                    option(value="150cv") 150cv
+                    option(value="200cv") 200cv
+                    option(value="250cv") 250cv
+                    option(value="300cv") 300cv
+        tr 
+            td(width="50%")
+                input(type='number' placeholder="Año" name='año' width="100%")
+            td(width="50%")
+                input(type='number' width="100%" placeholder="Precio Maximo" name='precioMaximo')
+        tr 
+            td(width="50%")
+                select(name="ciudad" width="100%") 
+                    option(value="Ciudad") Ciudad
+                    option(value="Ciudad1") Ciudad1
+                    option(value="Ciudad2") Ciudad2
+                    option(value="Ciudad3") Ciudad3
+                    option(value="Ciudad4") Ciudad4
+                    option(value="Ciudad5") Ciudad5
+            td(width="50%")
+                input(type='number' placeholder="Km maximos" name='km' width="100%")
+        tr 
+            td(colspan="2" width="100%")
+                a(width="100%" style="border: 1px solid black" href="./pagListadoCoches.html") buscar
+.listado    
+    h2 Listado de coches filtrados
+    - var n = 0;
+    while n < 8
+        div(style="border: 1px solid black; width: 70%; margin-left: 15%; height: 250px;") 
+            img(src='img/logo.PNG' style="float: left;height: 100%;")
+            a(style="width: 270px;margin-left: 255px;" href="./pagCoche.html") nombre coche
+            h3(style="margin-right: 10%;float: right;") 00000€
+            p descripcion del vehiculo escrita por el vendedor
+            -n++
+.pie(style="backgroun-color: light-gray;margin-top: 60px;") 
+    table(style='width:100%', border='1')
+        tr(style="height: 60px;background: lightgray;")
+            td
+                a Ayuda 
+            td
+                a Quienes somos 
+            td
+                a Coockies
+            td 
+                a Privacidad    
+            td 
+                a Contacto
+    

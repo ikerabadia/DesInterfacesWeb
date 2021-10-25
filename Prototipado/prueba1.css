@@ -1,0 +1,342 @@
+/*GENERALES*/
+body{
+    background: #414141;
+}
+table{
+    border: 3px solid black;
+    border-collapse: collapse;
+    background: #747272;
+}
+.tituloGeneral{
+    font-size: 55px;
+    background: #FFC300;
+    box-shadow: 10px 10px 60px #ffc300;
+    border-radius: 68px;
+    padding: 15px;
+}
+/*Cabecera*/
+.imgLogo{
+    float: left;
+    width: 250px;
+}
+.cabecera{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+.loginRegisterVender{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    width: 10%;
+}
+.btnlrv{
+    width: 100%;
+    height: 20%;
+    text-decoration: none;
+    color: black;
+    background: #FFC300;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #A07C00;
+    border-radius: 3px;
+    box-shadow: 2px 2px 10px #666;
+}
+.btnlrv:hover{
+    cursor: pointer;
+    background: #A07C00;   
+    color: white;
+    border: 1px solid whitesmoke;
+}
+.btnRegisterVender{
+    margin-top: 15%;
+}
+/*CONTENIDO GENERAL*/
+.content{    
+    margin-top: 3%;
+    background: #D1A100;
+    border: 5px solid #A07C00;
+}
+
+/*Tabla de filtros*/
+.divParrafoInformativo{
+    width: 48%;
+    text-align: center;
+    font-size: 32px;
+    margin-right: 2%;
+    background: #FFC300;
+    border-radius: 115px;
+    padding: 20px;
+    box-shadow: 10px 10px 60px #ffc300;
+    font-style: italic;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.filtros{
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.divFiltrosTabla{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.filtrosTabla{
+    border: 3px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+.filtrosTabla td{
+    border: 1px solid #414141;
+}
+.filtrosTabla input, .filtrosTabla select, .filtrosTabla a{
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0 auto;
+    border: 0px;
+    text-align: center;
+    display: block;
+    border: 1px solid #A07C00;
+}
+#filtrosBuscador{
+    width: 90%;
+}
+#botonBuscarFiltros{
+    width: 90%;
+    text-decoration: none;
+    color: black;
+    background: #FFC300;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #A07C00;
+}
+#botonBuscarFiltros:hover{
+    cursor: pointer;
+    background: #A07C00;   
+    color: white;
+    border: 1px solid whitesmoke;
+}
+
+/*Categorias*/
+.sugerencias{
+    margin-top: 2%;
+    background: lightslategray;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#tablaSugerencias td{
+    padding: 0.5%;
+}
+#tablaSugerencias td:hover{
+    padding: 0.5%;
+    background: white;
+}
+#tablaSugerencias p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    color: black;
+    background: whitesmoke;
+    font-size: 30px;
+}
+#tablaSugerencias a{
+    text-decoration: none;
+}
+.tablaSugerenciasLink{
+    box-shadow: 2px 2px 10px #666;
+}
+.imgCategorias{
+    width: 100%;
+    height: auto;
+}
+.divImgCategorias{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-size: cover;
+}
+#divImgSegundaMano{
+    background-image: url('img/logoCochesSegundaMano.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#divImgOcasion{
+    background-image: url('img/logoCochesOcasion.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#divImgTodoterrenos{
+    background-image: url('img/logoCochesTodoterreno.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#divImgKm0{
+    background-image: url('img/logoCochesKm0.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#divImgDeportivos{
+    background-image: url('img/logoCochesDeportivos.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#divImgFurgonetas{
+    background-image: url('img/logoCochesFurgonetas.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#divImgNuevos{
+    background-image: url('img/logoCochesNuevos.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#divImgFamiliares{
+    background-image: url('img/logoCochesFamiliares.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#divImgClasicos{
+    background-image: url('img/logoCochesClasicos.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/*ANUNCIOS PROPIOS (SLIDER)*/
+.anunciosPropios{
+    background: lightslategray;
+    margin: 2%
+}
+
+/*PIE DE PAGINA*/
+.pie a{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: cursive;
+    border: 1px solid lightgrey;
+}
+.pie a:hover{
+    background: black;
+    color: whitesmoke;
+    border: 1px solid grey;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/*ESTILOS MODO MOVIL*/
+@media (max-width: 750px) {
+
+    /*CABECERA*/
+    .imgLogo {
+        float: left;
+        width: 126px;
+    }
+    .tituloGeneral {
+        font-size: 25px;
+        background: #FFC300;
+        box-shadow: 10px 10px 60px #ffc300;
+        border-radius: 68px;
+        padding: 15px;
+    }
+
+    .cabecera {
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        width: 96%;
+        margin: 0 auto;
+        margin-top: 3%;
+        align-items: center;
+    }
+
+    .btnlrv {
+        width: 100%;
+        height: 20%;
+        text-decoration: none;
+        color: black;
+        background: #FFC300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #A07C00;
+        border-radius: 3px;
+        box-shadow: 2px 2px 10px #666;
+        FONT-SIZE: 13PX;
+    }
+
+    /*FILTROS*/
+    .filtros{
+        width: 96%;
+        margin-left: 2%;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divParrafoInformativo{
+        width: 96%;
+        text-align: center;
+        font-size: 32px;
+        margin-right: 2%;
+        background: #FFC300;
+        border-radius: 115px;
+        padding: 20px;
+        box-shadow: 10px 10px 60px #ffc300;
+        font-style: italic;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .divFiltrosTabla{
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    
+}
+

@@ -1,0 +1,57 @@
+body{
+    background-color: #59abe3;    
+}
+p{
+    font-family: calibri;
+}
+
+
+
+#formulario{
+    background-color: white;
+    border-radius: 10px;
+    width: 20%;
+    height: 45%;
+    margin-left: 40%;
+    margin-top: 20%;
+    box-shadow: 5px 5px 25px #222;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+#contacto{
+    font-family: calibri;
+    color: #78788c;
+    margin-top: 0px;
+    border-bottom: 3px solid;
+    width: 60%;
+    font-size: xx-large;
+}
+.subtitulo{
+    color: #78788c;
+    font-weight: bold;
+}
+.entradaTexto{
+    border: 0px;
+    border-bottom: 2px solid #bebed2;
+    width: 95%;
+    margin-top: 10px;
+}
+#btn_enviar{
+    background-color: white;
+    border: 2px solid #78788c;
+    font-family: calibri;
+    font-size: 16px;
+    padding: 7px;
+    color: #78788c;
+    margin-left: 52%;
+}
+#datos_contacto{
+    background-color: #78788c;
+    border-radius: 7px;
+    width: 300px;
+    height: 25px;
+    font-family: calibri;
+    padding: 15px;
+    margin-top: 78px;
+    color: white;
+}

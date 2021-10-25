@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TRADECAR</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="prueba1.css" />
+</head>
+
+<body>
+  <div class="cabecera">
+    <a href="./prueba1.html"><img src="img/logo.PNG" class="imgLogo"/></a>
+    <h1 class="tituloGeneral">TRADECAR</h1>
+    <div class="loginRegisterVender">
+      <a class="btnlrv">login </a>
+      <a class="btnlrv btnRegisterVender" href="./Registro.html">register</a>
+      <a class="btnlrv btnRegisterVender">vender</a>
+    </div>
+  </div>
+  <div class="content">
+    <div class="filtros">
+      <div class="divParrafoInformativo">
+        <p>Busca tu coche ideal entre las diferentes categorias que hemos preseleccionado para ti, o bien,
+          utiliza nuestro sistema de busqueda avanzado si buscas algo mas concreto.
+        </p>
+      </div>
+      <div class="divFiltrosTabla">
+        <h2>Sistema de busqueda avanzado</h2>
+        <table class="filtrosTabla">
+          <tr>
+            <td colspan="2" width="100%">
+              <input type="text" id="filtrosBuscador" name="buscador" placeholder="buscador"/>
+            </td>
+          </tr>
+          <tr>
+            <td width="50%">
+              <select name="marca" width="100%">
+                <option value="marca">Marca</option>
+                <option value="marca1">Marca1</option>
+                <option value="marca2">Marca2</option>
+                <option value="marca3">Marca3</option>
+                <option value="marca4">Marca4</option>
+                <option value="marca5">Marca5</option>
+              </select>
+            </td>
+            <td width="50%">
+              <select name="tipoCambio" width="100%">
+                <option value="Tipo de cambio">Tipo de cambio</option>
+                <option value="Automatico">Automatico</option>
+                <option value="Manual"></option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td width="50%">
+              <select name="modelo" width="100%">
+                <option value="Modelo">Modelo</option>
+                <option value="Modelo1">Modelo1</option>
+                <option value="Modelo2">Modelo2</option>
+                <option value="Modelo3">Modelo3</option>
+                <option value="Modelo4">Modelo4</option>
+                <option value="Modelo5">Modelo5</option>
+              </select>
+            </td>
+            <td width="50%">
+              <select name="potencia" width="100%">
+                <option value="Potencia">Potencia</option>
+                <option value="100cv">100cv</option>
+                <option value="150cv">150cv</option>
+                <option value="200cv">200cv</option>
+                <option value="250cv">250cv</option>
+                <option value="300cv">300cv</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td width="50%">
+              <input type="number" placeholder="Año" name="año"/>
+            </td>
+            <td width="50%">
+              <input type="number" placeholder="Precio Maximo" name="precioMaximo"/>
+            </td>
+          </tr>
+          <tr>
+            <td width="50%">
+              <select name="ciudad" width="100%">
+                <option value="Ciudad">Ciudad</option>
+                <option value="Ciudad1">Ciudad1</option>
+                <option value="Ciudad2">Ciudad2</option>
+                <option value="Ciudad3">Ciudad3</option>
+                <option value="Ciudad4">Ciudad4</option>
+                <option value="Ciudad5">Ciudad5</option>
+              </select>
+            </td>
+            <td width="50%">
+              <input type="number" placeholder="Km maximos" name="km"/>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" width="100%">
+              <a width="100%" id="botonBuscarFiltros" href="./pagListadoCoches.html">Buscar</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="sugerencias" style="margin-top: 30px; background: lightslategray">
+      <table id="tablaSugerencias" style="width: 100%" border="1">
+        <tr style="height: 150px">
+          <td style="width: 30%"><a href="./pagListadoCoches.html"><div class="divImgCategorias" id="divImgSegundaMano"></div><p>Segunda mano</p></a></td>
+          <td style="width: 30%"><a href="./pagListadoCoches.html"><div class="divImgCategorias" id="divImgOcasion"></div><p>De ocasion</p></a></td>
+          <td style="width: 30%"><a href="./pagListadoCoches.html"><div class="divImgCategorias" id="divImgTodoterrenos"></div><p>Todoterrenos</p></a></td>
+        </tr>
+        <tr style="height: 150px">
+          <td style="width: 30%"><a href="./pagListadoCoches.html"><div class="divImgCategorias" id="divImgKm0"></div><p>Coches de kilometro 0</p></a></td>
+          <td style="width: 30%"><a href="./pagListadoCoches.html"><div class="divImgCategorias" id="divImgDeportivos"></div></div><p>Coches deportivos</p></a></td>
+          <td style="width: 30%"><a href="./pagListadoCoches.html"><div class="divImgCategorias" id="divImgFurgonetas"></div></div><p>Furgonetas</p></a></td>
+        </tr>
+        <tr style="height: 150px">
+          <td style="width: 30%"><a href="./pagListadoCoches.html"><div class="divImgCategorias" id="divImgNuevos"></div><p>Coches nuevos</p></a></td>
+          <td style="width: 30%"><a href="./pagListadoCoches.html"><div class="divImgCategorias" id="divImgFamiliares"></div><p>Coches familiares</p></a></td>
+          <td style="width: 30%"><a href="./pagListadoCoches.html"><div class="divImgCategorias" id="divImgClasicos"></div><p>Coches clasicos</p></a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="anunciosPropios" style="margin-top: 30px; background: lightslategray">
+      <table style="width: 100%" border="1">
+        <tr style="height: 150px">
+          <td><a href="./pagCoche.html">Anuncio 1</a></td>
+          <td><a href="./pagCoche.html">Anuncio 2</a></td>
+          <td><a href="./pagCoche.html">Anuncio 3</a></td>
+          <td><a href="./pagCoche.html">Anuncio 4 </a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="pie" style="margin-top: 60px; position: absolute; left: 0px; right: 0px">
+    <table style="width: 100%" border="1">
+      <tr style="height: 60px; background: lightgray">
+        <td><a>Ayuda </a></td>
+        <td><a>Quienes somos </a></td>
+        <td><a>Coockies</a></td>
+        <td><a>Privacidad </a></td>
+        <td><a>Contacto</a></td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
