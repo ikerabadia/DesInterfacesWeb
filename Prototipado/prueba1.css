@@ -1,6 +1,7 @@
 /*GENERALES*/
 body{
     background: #414141;
+    margin:0px;
 }
 table{
     border: 3px solid black;
@@ -143,38 +144,46 @@ table{
 /*Categorias*/
 .sugerencias{
     margin-top: 2%;
-    background: lightslategray;
+    background: #747272;
     margin-left: 2%;
     margin-right: 2%;
-}
-#tablaSugerencias td{
-    padding: 0.5%;
-}
-#tablaSugerencias td:hover{
-    padding: 0.5%;
-    background: white;
-}
-#tablaSugerencias p{
-    margin-top: 0px;
-    margin-bottom: 0px;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    text-decoration: none;
-    color: black;
-    background: whitesmoke;
-    font-size: 30px;
+    flex-direction: column;
+    padding: 1%;
 }
-#tablaSugerencias a{
+.sugerencias a{
     text-decoration: none;
 }
-.tablaSugerenciasLink{
-    box-shadow: 2px 2px 10px #666;
-}
-.imgCategorias{
+.filaSugerencias{
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    height: auto;
+    justify-content: space-evenly;
 }
+.sugerencia{
+    width: 33%;
+    background: black;
+    color: whitesmoke;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;    
+}
+.sugerencia p{
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+    margin: 0px;
+    color: whitesmoke;
+}
+.sugerencia:hover{
+    background: whitesmoke;
+}
+.sugerencia:hover p {
+    color: black;
+}
+
+
+
 .divImgCategorias{
     width: 100%;
     height: 250px;
@@ -242,6 +251,12 @@ table{
 }
 
 /*PIE DE PAGINA*/
+.pie{
+    width: 100%;
+}
+.tablaPie{
+    width: 100%;
+}
 .pie a{
     display: flex;
     align-content: center;
@@ -337,6 +352,29 @@ table{
         align-items: center;
     }
 
+    /*SUGERENCIAS*/
+    .filaSugerencias{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .sugerencia {
+        width: 100%;
+        background: black;
+        color: whitesmoke;
+        padding: 0px;
+        margin: 0px;
+        text-decoration: none;
+        margin-bottom: 5px;
+    }
+    .sugerencia p{
+        text-align: center;
+        font-family: cursive;
+        font-size: 18px;
+        margin: 0px;
+        color: whitesmoke;
+    }
     
 }
 
