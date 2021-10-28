@@ -14,6 +14,7 @@ table{
     box-shadow: 10px 10px 60px #ffc300;
     border-radius: 68px;
     padding: 15px;
+    font-family: arial;
 }
 /*Cabecera*/
 .imgLogo{
@@ -53,6 +54,7 @@ table{
     border: 1px solid #A07C00;
     border-radius: 3px;
     box-shadow: 2px 2px 10px #666;
+    font-family: arial;
 }
 .btnlrv:hover{
     cursor: pointer;
@@ -85,6 +87,7 @@ table{
     align-content: center;
     justify-content: center;
     align-items: center;
+    font-family: arial;
 }
 .filtros{
     width: 96%;
@@ -94,7 +97,10 @@ table{
     flex-direction: row;
     justify-content: center;
 }
-
+.tituloFiltros{
+    font-family: arial;
+    font-size: 30px;
+}
 .divFiltrosTabla{
     width: 48%;
     display: flex;
@@ -133,6 +139,7 @@ table{
     justify-content: center;
     align-items: center;
     border: 1px solid #A07C00;
+    font-family: arial;
 }
 #botonBuscarFiltros:hover{
     cursor: pointer;
@@ -143,13 +150,20 @@ table{
 
 /*Categorias*/
 .sugerencias{
-    margin-top: 2%;
+    margin-top: 5%;
     background: #747272;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 0%;
+    margin-right: 0%;
     display: flex;
     flex-direction: column;
     padding: 1%;
+}
+.tituloCategorias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: arial;
+    font-size: 30px;
 }
 .sugerencias a{
     text-decoration: none;
@@ -174,6 +188,8 @@ table{
     font-size: 30px;
     margin: 0px;
     color: whitesmoke;
+    font-family: arial;
+    margin-top: 10px;
 }
 .sugerencia:hover{
     background: whitesmoke;
@@ -181,9 +197,6 @@ table{
 .sugerencia:hover p {
     color: black;
 }
-
-
-
 .divImgCategorias{
     width: 100%;
     height: 250px;
@@ -246,16 +259,36 @@ table{
 }
 /*ANUNCIOS PROPIOS (SLIDER)*/
 .anunciosPropios{
-    background: lightslategray;
-    margin: 2%
+    background: #747272;
+    margin: 2%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid black;
+}
+.anunciosPropios a{
+    width: 20%;
+    text-decoration: none;
+    background: #414141;
+    height: 80%;
+    color: whitesmoke;
+    font-family: arial;
 }
 
 /*PIE DE PAGINA*/
 .pie{
     width: 100%;
 }
-.tablaPie{
+.divPie{
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .pie a{
     display: flex;
@@ -263,11 +296,15 @@ table{
     justify-content: center;
     text-decoration: none;
     font-family: cursive;
-    border: 1px solid lightgrey;
+    border: 1px solid #414141;
+    width: 15%;
+    font-family: arial;
+    color: whitesmoke;
 }
 .pie a:hover{
-    background: black;
-    color: whitesmoke;
+    background: #FFC300;
+    box-shadow: 10px 10px 60px #ffc300;
+    color: black;
     border: 1px solid grey;
     border-radius: 15px;
     cursor: pointer;
@@ -278,8 +315,7 @@ table{
 
     /*CABECERA*/
     .imgLogo {
-        float: left;
-        width: 126px;
+        display: none;
     }
     .tituloGeneral {
         font-size: 25px;
@@ -288,6 +324,7 @@ table{
         border-radius: 68px;
         padding: 15px;
     }
+    
 
     .cabecera {
         height: 10%;
@@ -300,6 +337,16 @@ table{
         margin: 0 auto;
         margin-top: 3%;
         align-items: center;
+    }
+
+    .loginRegisterVender{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: stretch;
+        width: 30%;
     }
 
     .btnlrv {
@@ -329,10 +376,10 @@ table{
     }
 
     .divParrafoInformativo{
-        width: 96%;
+        width: 80%;
         text-align: center;
-        font-size: 32px;
-        margin-right: 2%;
+        font-size: 15px;
+        margin-right: 0%;
         background: #FFC300;
         border-radius: 115px;
         padding: 20px;
@@ -341,7 +388,7 @@ table{
         display: flex;
         align-content: center;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
     }
 
     .divFiltrosTabla{
@@ -370,10 +417,26 @@ table{
     }
     .sugerencia p{
         text-align: center;
-        font-family: cursive;
         font-size: 18px;
         margin: 0px;
         color: whitesmoke;
+    }
+
+    /*PIE DE PAGINA*/
+    .divPie{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .pie a{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        text-decoration: none;
+        border: 0px solid lightgrey;
+        width: 100%;
     }
     
 }
