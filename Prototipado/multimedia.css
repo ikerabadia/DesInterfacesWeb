@@ -1,0 +1,169 @@
+/*GENERALES*/
+body{
+    background: #414141;
+    margin:0px;
+}
+table{
+    border: 3px solid black;
+    border-collapse: collapse;
+    background: #747272;
+}
+.tituloGeneral{
+    font-size: 55px;
+    background: #FFC300;
+    box-shadow: 10px 10px 60px #ffc300;
+    border-radius: 68px;
+    padding: 15px;
+    font-family: arial;
+}
+/*Cabecera*/
+.imgLogo{
+    float: left;
+    width: 250px;
+}
+.cabecera{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+.loginRegisterVender{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    width: 10%;
+}
+.btnlrv{
+    width: 100%;
+    height: 20%;
+    text-decoration: none;
+    color: black;
+    background: #FFC300;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #A07C00;
+    border-radius: 3px;
+    box-shadow: 2px 2px 10px #666;
+    font-family: arial;
+}
+.btnlrv:hover{
+    cursor: pointer;
+    background: #A07C00;   
+    color: white;
+    border: 1px solid whitesmoke;
+}
+.btnRegisterVender{
+    margin-top: 15%;
+}
+/*CONTENIDO GENERAL*/
+.content{    
+    margin-top: 3%;
+    background: #D1A100;
+    border: 5px solid #A07C00;
+    display: flex;
+    justify-content: center;
+}
+
+/*VIDEO Y CONTROLES*/
+.divContenidoVideo{
+    width: 60%;
+    background: #747272;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.divVideo{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divControlesVideo{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.divControlesVideo a{
+    margin-left: 15px;
+      
+}
+.divControlesVideo a:hover{
+    cursor: pointer;
+}
+#video{
+    width: 100%;
+    height: 100%;
+}
+#volumen{
+    margin-left: 15px;
+}
+.divProgressVideo{
+    height: 100%;
+    width: 50%;
+    background: black;
+    display: flex;
+    margin-left: 15px;
+}
+#progressVideo{
+    width: 100%;
+}
+.simboloVideo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    background: whitesmoke;
+    border-radius: 15px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    opacity: 0;
+    transform: scale(1,1);
+}
+/*PIE DE PAGINA*/
+.pie{
+    width: 100%;
+}
+.divPie{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pie a{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: cursive;
+    border: 1px solid #414141;
+    width: 15%;
+    font-family: arial;
+    color: whitesmoke;
+}
+.pie a:hover{
+    background: #FFC300;
+    box-shadow: 10px 10px 60px #ffc300;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 15px;
+    cursor: pointer;
+}

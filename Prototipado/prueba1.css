@@ -100,6 +100,7 @@ table{
 .tituloFiltros{
     font-family: arial;
     font-size: 30px;
+    text-align: center;
 }
 .divFiltrosTabla{
     width: 48%;
@@ -351,7 +352,7 @@ table{
 
     .btnlrv {
         width: 100%;
-        height: 20%;
+        height: 20px;
         text-decoration: none;
         color: black;
         background: #FFC300;
