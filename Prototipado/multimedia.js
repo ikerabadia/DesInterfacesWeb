@@ -19,13 +19,16 @@ function stop() {
 }
 function pause() {
     document.getElementById("video").pause();
+    mostrarSimbolo("<i class=\"fa fa-pause fa-2x\" aria-hidden=\"true\"></i>");
 }
 function volume(valorVolumen) {
     document.getElementById("video").volume = valorVolumen;
+    mostrarSimbolo("<p>Volumen:<br> "+valorVolumen*100+"</p>");
 }
 function mute() {
     document.getElementById("video").volume = 0;
     document.getElementById("volumen").value = 0;
+    mostrarSimbolo("<i class=\"fa fa-volume-off fa-2x\" aria-hidden=\"true\"></i>");
 }
 function iniciarReproduccionVideo() {
     var video = document.getElementById("video");
@@ -44,6 +47,7 @@ function detenerReproduccionVideo() {
 function modificarReproduccionVideo(time) {
     var video = document.getElementById("video");
     video.currentTime = time;
+    mostrarSimbolo("<p>Progreso: <br>"+parseInt(time/60)+":"+time%60+"</p>");
 }
 function mostrarSimbolo(simbolo) {
     var divSimbolo = document.getElementById("simboloVideo");

@@ -35,10 +35,10 @@
             <a onclick="stop()" class="stop"><i class="fa fa-stop fa-2x" aria-hidden="true"></i></a>
             <a onclick="pause()" class="pause"><i class="fa fa-pause fa-2x" aria-hidden="true"></i></a>
             <div class="divProgressVideo">
-                <input type="range" id="progressVideo" min=0 name="points" onchange="modificarReproduccionVideo(this.value)">
+                <input type="range" id="progressVideo" min=0 name="points" oninput="modificarReproduccionVideo(this.value)">
             </div>
             <a onclick="mute()" class="pause"><i class="fa fa-volume-off fa-2x" aria-hidden="true"></i></a>            
-            <input type="range" id="volumen" name="points" min="1" max="100" onchange="volume(this.value/100)">
+            <input type="range" id="volumen" name="points" min="1" max="100" oninput="volume(this.value/100)">
         </div>
       </div>    
   </div>
@@ -49,6 +49,7 @@
         <a>Cookies</a>
         <a>Privacidad </a>
         <a>Contacto</a>
+        <a href="animaciones.html">Animaciones</a>
         <a href="multimedia.html">Multimedia</a>
     </div>
   </div>

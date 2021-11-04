@@ -74,69 +74,28 @@ table{
     justify-content: center;
 }
 
-/*VIDEO Y CONTROLES*/
-.divContenidoVideo{
-    width: 60%;
-    background: #747272;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-}
-.divVideo{
+/*ANIMACIONES*/
+#contenedorBuscador{
     width: 100%;
-    height: 90%;
+    height: 169px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.divControlesVideo{
-    height: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
-.divControlesVideo a{
-    margin-left: 15px;
-      
-}
-.divControlesVideo a:hover{
-    cursor: pointer;
-}
-#video{
-    width: 100%;
-    height: 100%;
-}
-#volumen{
-    margin-left: 15px;
-}
-.divProgressVideo{
-    height: 100%;
-    width: 50%;
-    background: black;
-    display: flex;
-    margin-left: 15px;
-}
-#progressVideo{
-    width: 100%;
-}
-.simboloVideo{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 50%;
-    left: 50%;
-    display: flex;
-    background: whitesmoke;
-    border-radius: 15px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    transition: 1s;
-    opacity: 0;
-    transform: scale(1,1);
-    text-align: center;
 }
+
+.mostrarScale {
+    animation: rotacion 2s;
+}
+@keyframes rotacion{
+    50%{
+        transform: rotateX(180);
+    }
+    100%{
+        transform: rotateX(360);
+    }
+}
+
 /*PIE DE PAGINA*/
 .pie{
     width: 100%;
