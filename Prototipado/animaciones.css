@@ -72,6 +72,8 @@ table{
     border: 5px solid #A07C00;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*ANIMACIONES*/
@@ -84,18 +86,155 @@ table{
     justify-content: center;
 }
 
-.mostrarScale {
-    animation: rotacion 2s;
+#buscador:focus {
+    animation: rotacion 2s infinite;
 }
 @keyframes rotacion{
-    50%{
-        transform: rotateX(180);
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animacion1Cuadrado{
+    30%{
+        top: 350px;
+        left: 0px;
+    }
+    70%{
+        top: 0px;
+        left: 350px;
     }
     100%{
-        transform: rotateX(360);
+        top: 350px;
+        left: 350px;
+    }
+}
+@keyframes animacion2Cuadrado{
+    0%{
+        top: 350px;
+        left: 350px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
     }
 }
 
+#contenedorImagen{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 30px;
+    background: #FFC300;
+    box-shadow: 0px 0px 20px #ffc300;
+    position: relative;
+}
+#cuadradoImagen{
+    background: black;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: 2s;
+}
+/*FORMULARIO*/
+#contenedorFormulario{
+    margin-bottom: 30px;
+    background: #FFC300;
+    box-shadow: 0px 0px 20px #ffc300;
+    position: relative;
+    height: 150px;
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+#cuadradosCarga{
+    height: 25px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0;
+}
+.cuadradoCarga{
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+}
+/*CARRERA*/
+#contenedorCarrera{
+    width: 980px;
+    height: 456px;
+    margin-bottom: 10px;
+    background-image: url("./img/carrera/circuito.png");
+    position: relative;
+}
+#contenedorCoche{
+    width: 160px;
+    height: 60px;
+    background-image: url(./img/carrera/coche.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 13px;
+    right: 0px;
+    animation: animacionCarrera linear 10s forwards;
+    animation-play-state: paused;
+}
+#contenedorCoche:hover{
+    animation-play-state: running;
+}
+@keyframes animacionCarrera{
+    25%{
+        bottom: 3px;
+        right: 610px;
+        transform: rotate(00deg);
+    }
+    30%{
+        bottom: 55px;
+        right: 680px;
+        transform: rotate(45deg);
+    }
+    35%{
+        bottom: 110px;
+        right: 710px;
+        transform: rotate(90deg);
+    }
+    40%{
+        bottom: 170px;
+        right: 693px;
+        transform: rotate(135deg);
+    }
+    45%{
+        bottom: 200px;
+        right: 600px;
+        transform: rotate(180deg);
+    }
+    60%{
+        bottom: 190px;
+        right: 240px;
+        transform: rotate(180deg);
+    }
+    70%{
+        bottom: 300px;
+        right: 144px;
+        transform: rotate(90deg);
+    }
+    80%{
+        bottom: 390px;
+        right: 235px;
+        transform: rotate(00deg);
+    }
+    100%{
+        bottom: 390px;
+        right: 860px;
+        transform: rotate(00deg);
+    }
+}
 /*PIE DE PAGINA*/
 .pie{
     width: 100%;

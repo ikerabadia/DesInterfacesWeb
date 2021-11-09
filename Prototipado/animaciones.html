@@ -22,7 +22,30 @@
   </div>
   <div class="content">
       <div id="contenedorBuscador">
-        <input type="search" id="buscador" onfocus="rotar()">
+        <input type="search" id="buscador" >
+      </div>
+      <div id="contenedorImagen">
+        <div id="cuadradoImagen" onclick="moverCuadradoImagen()">
+
+        </div>
+      </div>
+      <div id="contenedorFormulario">
+        <form id="formulario" >
+          <input type="email" placeholder="EMail" required>
+          <input type="tel" placeholder="Telefono" required>
+          <input type="text" placeholder="texto libre" required>
+          <input value="Submit" id="btnSubmit" onclick="envioFormulario()">          
+        </form>
+        <div id="cuadradosCarga">
+          <div id="cuadradoCarga1" class="cuadradoCarga"></div>
+          <div id="cuadradoCarga2" class="cuadradoCarga"></div>
+          <div id="cuadradoCarga3" class="cuadradoCarga"></div>
+        </div>
+      </div>
+      <div id="contenedorCarrera">
+        <div id="contenedorCoche" onclick="iniciarCarrera()">
+
+        </div>
       </div>
   </div>
   <div class="pie">
