@@ -219,10 +219,20 @@ table{
         right: 240px;
         transform: rotate(180deg);
     }
+    65%{
+        bottom: 230px;
+        right: 155px;
+        transform: rotate(135deg);
+    }
     70%{
         bottom: 300px;
-        right: 144px;
+        right: 130px;
         transform: rotate(90deg);
+    }
+    75%{
+        bottom: 350px;
+        right: 160px;
+        transform: rotate(45deg);
     }
     80%{
         bottom: 390px;
@@ -235,6 +245,96 @@ table{
         transform: rotate(00deg);
     }
 }
+
+
+/*SLIDER*/
+#contenedorSlider{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+}
+#img1{
+    background-image: url(img/logoCochesDeportivos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    right: 0%;
+    animation: animacionSliderImg1 ease 5s infinite forwards;
+    z-index: 999;
+}
+#img2{
+    background-image: url(img/logoCochesClasicos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    right: -100%;
+    animation: animacionSliderImg2 ease 5s infinite forwards;
+    z-index: 1;
+}
+#img3{
+    background-image: url(img/gruaCars.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    right: 100%;
+    animation: animacionSliderImg3 ease 5s infinite forwards;
+    z-index: 1;
+}
+@keyframes animacionSliderImg1 {
+    33%{
+        right: 100%;
+        z-index: 1;
+    }
+    66%{
+        right: -100%;
+        z-index: 1;
+    }
+    100%{
+        right: 0%;
+        z-index: 999;
+    }
+}
+@keyframes animacionSliderImg2 {
+    33%{
+        right: 0%;
+        z-index: 999;
+    }
+    66%{
+        right: 100%;
+        z-index: 1;
+    }
+    100%{
+        right: -100%;
+        z-index: 1;
+    }    
+}
+@keyframes animacionSliderImg3 {
+    33%{
+        right: -100%;
+        z-index: 1;
+    }
+    66%{
+        right: 0%;
+        z-index: 999;
+    }
+    100%{
+        right: 100%;
+        z-index: 1;
+    }    
+}
+
 /*PIE DE PAGINA*/
 .pie{
     width: 100%;
