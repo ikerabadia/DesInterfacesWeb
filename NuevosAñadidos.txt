@@ -1,0 +1,26 @@
+CADA UNO DE ESTOS EJERCICIOS EN UNA PAGINA DISTINTA DENTRO DE LA WEB
+
+1- 
+	Una imagen de un lago o un fondo de agua que cuando haces hover 
+	en un punto concreto salgan ondas
+2-
+	Una barra de progresa que:
+		- del 0 - 20 % sera azul
+		- del 21 - 40 % sera amarilla
+		- del 40 - 50 % sera morada
+		- del 50 - 70 % sera amarillo verdoso
+		- del 70 pasa al 20% siendo roja
+		- del 21 pasa al 80% siendo azul
+		- del 80 pasa al 100% siendo verde
+	habra un reloj de arena dando vueltas hasta que acabe la barra de progreso y entonces para el reloj
+3- 
+	Cojer una imagen de una papelera que tenga pedal y tapa
+	cuando hay hover, se baja el pedal y se sube la tapa, probablemente
+	habra que recortar tapa y pedal para poder moverlas.
+4- 
+	Un circuito electrico por el cual se mueve una chispa que se va haciendo grande y pequeña y
+	brillando mas y menos, llega a la bombilla, la bombilla se enciende por unos segundos, 
+	y la chispa vuelve.
+5-
+	Un coche sobre una superficie con el hover arranca, las ruedas dan vueltas, y acelera hasta llegar al final
+	
