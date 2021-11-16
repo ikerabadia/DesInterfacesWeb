@@ -28,14 +28,25 @@ body{
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 66px #019fb5 inset, 0px 0px 66px #019fb5;
+    animation: opacidad linear 5s infinite;
 }
 @keyframes animacionOnda {
     0%{
         width: 0px;
         height: 0px;
+        opacity: 1;
     }
     100%{
         width: 5500px;
         height: 5500px;
+        opacity: 0;
+    }    
+}
+@keyframes opacidad {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
     }    
 }

@@ -1,0 +1,204 @@
+/*GENERALES*/
+body{
+    background: #414141;
+    margin:0px;
+}
+table{
+    border: 3px solid black;
+    border-collapse: collapse;
+    background: #747272;
+}
+.tituloGeneral{
+    font-size: 55px;
+    background: #FFC300;
+    box-shadow: 10px 10px 60px #ffc300;
+    border-radius: 68px;
+    padding: 15px;
+    font-family: arial;
+}
+/*Cabecera*/
+.imgLogo{
+    float: left;
+    width: 250px;
+}
+.cabecera{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+.loginRegisterVender{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    width: 10%;
+}
+.btnlrv{
+    width: 100%;
+    height: 20%;
+    text-decoration: none;
+    color: black;
+    background: #FFC300;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #A07C00;
+    border-radius: 3px;
+    box-shadow: 2px 2px 10px #666;
+    font-family: arial;
+}
+.btnlrv:hover{
+    cursor: pointer;
+    background: #A07C00;   
+    color: white;
+    border: 1px solid whitesmoke;
+}
+.btnRegisterVender{
+    margin-top: 15%;
+}
+
+/*BARRA DE PROGRESO*/
+#divBarraProgreso{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#contenedorBarra{
+    background: black;
+    width: 1000px;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+#barra{
+    height: 36px;
+    width: 0%;
+    background: blue;    
+    margin-left: 3px;
+    margin-right: 3px;
+    animation: barraProgreso 10s linear forwards;
+}
+
+@keyframes barraProgreso {
+    20%{
+        background: blue;
+        width: 20%;
+    }
+    20.1%{
+        background: yellow;
+        width: 20%;
+    }
+    40%{
+        background: yellow;
+        width: 40%;
+    }
+    40.1%{
+        background: purple;
+        width: 40%;
+    }
+    50%{
+        background: purple;
+        width: 50%;
+    }   
+    50.1%{
+        background: yellowgreen;
+        width: 50%;
+    } 
+    70%{
+        background: yellowgreen;
+        width: 70%;
+    } 
+    70.1%{
+        background: red;
+        width: 70%;
+    }
+    75%{
+        background: red;
+        width: 20%;
+    } 
+    75.1%{
+        background: blue;
+        width: 20%;
+    }
+    80%{
+        background: blue;
+        width: 80%;
+    } 
+    80.1%{
+        background: green;
+        width: 80%;
+    } 
+    100%{
+        background: green;
+        width: 100%;
+    }
+}
+
+#imgReloj{
+    width: 150px;
+    animation: relojArena 10s forwards;
+}
+@keyframes relojArena{
+    100%{
+        transform: rotate(7200deg);
+    }
+}
+
+/*CONTENIDO GENERAL*/
+.content{    
+    margin-top: 3%;
+    background: #D1A100;
+    border: 5px solid #A07C00;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*PIE DE PAGINA*/
+.pie{
+    width: 100%;
+}
+.divPie{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pie a{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: cursive;
+    border: 1px solid #414141;
+    width: 15%;
+    font-family: arial;
+    color: whitesmoke;
+}
+.pie a:hover{
+    background: #FFC300;
+    box-shadow: 10px 10px 60px #ffc300;
+    color: black;
+    border: 1px solid #ffc300;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
