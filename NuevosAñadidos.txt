@@ -26,4 +26,7 @@ CADA UNO DE ESTOS EJERCICIOS EN UNA PAGINA DISTINTA DENTRO DE LA WEB
 5-
 	Un coche sobre una superficie con el hover arranca, las ruedas dan vueltas, y acelera hasta llegar al final.
  	En el final, se choca contra un arbol, la copa del arbol se cae, el coche se abolla, y se prende fuego.
+6- 
+	Una carrera en un circuito donde hay dos coches que daran 3 vueltas al circuito, 
+	el que salio primero quedara segundo y el que salio segundo quedara primero.
 	

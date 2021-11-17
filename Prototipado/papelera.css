@@ -73,13 +73,38 @@ table{
 #papeleraTapa{
     position:absolute;
     right: 0px;
+    bottom: 360px;
+    transition: 1s;
 }
 #papeleraPedal{
     position: absolute;
     left: 79px;
     bottom: 28px;
+    transition: 1s;
 }
 
+#papeleraPedal:hover{
+    transform: translateY(18px);
+}
+#papeleraPedal:hover+#papeleraTapa{
+    transform: translateY(-75px);
+}
+@keyframes pisarPedal {
+    0%{
+        bottom: 28px;
+    }
+    100%{
+        bottom: 10px;
+    }
+}
+@keyframes subirTapa {
+    0%{
+        bottom: 360px;
+    }
+    100%{
+        bottom: 435px
+    }
+}
 /*CONTENIDO GENERAL*/
 .content{    
     margin-top: 3%;
