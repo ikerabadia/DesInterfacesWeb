@@ -1,0 +1,243 @@
+/*GENERALES*/
+body{
+    background: #414141;
+    margin:0px;
+}
+table{
+    border: 3px solid black;
+    border-collapse: collapse;
+    background: #747272;
+}
+.tituloGeneral{
+    font-size: 55px;
+    background: #FFC300;
+    box-shadow: 10px 10px 60px #ffc300;
+    border-radius: 68px;
+    padding: 15px;
+    font-family: arial;
+}
+/*Cabecera*/
+.imgLogo{
+    float: left;
+    width: 250px;
+}
+.cabecera{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+.loginRegisterVender{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    width: 10%;
+}
+.btnlrv{
+    width: 100%;
+    height: 20%;
+    text-decoration: none;
+    color: black;
+    background: #FFC300;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #A07C00;
+    border-radius: 3px;
+    box-shadow: 2px 2px 10px #666;
+    font-family: arial;
+}
+.btnlrv:hover{
+    cursor: pointer;
+    background: #A07C00;   
+    color: white;
+    border: 1px solid whitesmoke;
+}
+.btnRegisterVender{
+    margin-top: 15%;
+}
+
+/*COCHE CHOQUE*/
+#carretera{
+    width: 1000px;
+}
+#coche{
+    position: absolute;
+    width: 135px;
+    top: 713px;
+    right: 60px;
+    height: 45px;
+    animation: movimientoAlanteCoche 3s linear forwards, abollado 4s linear forwards;
+}
+#ruedaDelantera{
+    position: absolute;
+    width: 25px;
+    right: 155px;
+    top: 732px;
+    animation: rotacion 0.5s infinite linear, ruedaDelantera 3s linear forwards;
+}
+#ruedaTrasera{
+    position: absolute;
+    width: 25px;
+    right: 75px;
+    top: 732px;
+    animation: rotacion 0.5s infinite linear, ruedaTrasera 3s linear forwards;
+}
+#troncoArbol{
+    width: 100px;
+    position: absolute;
+    top: 680px;
+    left: 85px;
+}
+#copaArbol{
+    position: absolute;
+    width: 100px;
+    left: 85px;
+    top: 623px;
+    animation: copaArbol 4s linear forwards;
+}
+#fuego{
+    position: absolute;
+    width: 100px;
+    top: 629px;
+    right: 848px;
+    opacity: 0;
+    animation: fuego 5s linear forwards;
+}
+
+@keyframes rotacion{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes movimientoAlanteCoche {
+    0%{
+        right: 60px;
+    }
+    33%{
+        right: 160px;
+    }
+    66%{
+        right: 360px;
+    }
+    100%{
+        right: 837px;
+    }
+}
+@keyframes ruedaDelantera {
+    0%{
+        right: 155px;
+    }
+    33%{
+        right: 255px;
+    }
+    66%{
+        right: 455px;
+    }
+    100%{
+        right: 931px;
+    }
+}
+@keyframes ruedaTrasera {
+    0%{
+        right: 75px;
+    }
+    33%{
+        right: 175px;
+    }
+    66%{
+        right: 375px;
+    }
+    100%{
+        right: 852px;
+    }
+}
+@keyframes copaArbol {
+    0%{
+        left: 85px;
+        top: 623px;
+    }
+    75%{
+        left: 85px;
+        top: 623px;
+    }
+    100%{
+        left: 162px;
+        top: 698px;
+    }
+}
+@keyframes abollado {
+    0%{
+        width: 135px;
+    }
+    75%{
+        width: 135px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+@keyframes fuego {
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*CONTENIDO GENERAL*/
+.content{    
+    margin-top: 3%;
+    background: #D1A100;
+    border: 5px solid #A07C00;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+/*PIE DE PAGINA*/
+.pie{
+    width: 100%;
+}
+.divPie{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pie a{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: cursive;
+    border: 1px solid #414141;
+    width: 15%;
+    font-family: arial;
+    color: whitesmoke;
+}
+.pie a:hover{
+    background: #FFC300;
+    box-shadow: 10px 10px 60px #ffc300;
+    color: black;
+    border: 1px solid #ffc300;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
