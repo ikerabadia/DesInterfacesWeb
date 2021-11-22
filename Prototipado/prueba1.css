@@ -70,6 +70,7 @@ table{
     margin-top: 3%;
     background: #D1A100;
     border: 5px solid #A07C00;
+    
 }
 
 /*Tabla de filtros*/
@@ -112,6 +113,19 @@ table{
 .filtrosTabla{
     border: 3px solid black;
     border-collapse: collapse;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #414141;
+}
+.filaBuscador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.itemBuscador{
     width: 100%;
 }
 .filtrosTabla td{
