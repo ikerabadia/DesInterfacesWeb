@@ -69,18 +69,34 @@ table{
 /*PAPELERA*/
 #papelera{
     position:relative;
+    
+}
+#papeleraCuerpo{
+    z-index: 1;
+    position: absolute;
+    top: -180px;
 }
 #papeleraTapa{
-    position:absolute;
-    right: 0px;
-    bottom: 360px;
+    position: absolute;
+    right: -252px;
+    bottom: 127px;
     transition: 1s;
 }
 #papeleraPedal{
     position: absolute;
-    left: 79px;
-    bottom: 28px;
+    left: 80px;
+    bottom: -202px;
     transition: 1s;
+    z-index: 2;
+}
+#bolaPapel{
+    position: absolute;
+    width: 40px;
+    right: -330px;
+    top: -228px;
+    transition: 1s;
+    opacity: 0;
+    z-index: 0;
 }
 
 #papeleraPedal:hover{
@@ -88,6 +104,21 @@ table{
 }
 #papeleraPedal:hover+#papeleraTapa{
     transform: translateY(-75px);
+}
+#papeleraPedal:hover+#papeleraTapa+#bolaPapel{
+    animation: bolapapel 1s forwards;
+}
+@keyframes bolapapel {
+    0%{
+        right: -330px;
+        top: -228px;
+        opacity: 1;
+    }
+    100%{
+        right: -187px;
+        top: -110px;
+        opacity: 1;
+    }
 }
 @keyframes pisarPedal {
     0%{
