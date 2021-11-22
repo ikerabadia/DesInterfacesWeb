@@ -1,18 +1,30 @@
 /*GENERALES*/
 body{
-    padding-left: 10%;
-    padding-right: 10%;
-    background: red;
+    background: #414141;
+    margin:0px;
 }
 table{
-    border: 2px solid black;
+    border: 3px solid black;
     border-collapse: collapse;
+    background: #747272;
+}
+.tituloGeneral{
+    font-size: 55px;
+    background: #FFC300;
+    box-shadow: 10px 10px 60px #ffc300;
+    border-radius: 68px;
+    padding: 15px;
+    font-family: arial;
 }
 th, td{
     border: 1px solid black;
 }
 
 /*Cabecera*/
+.imgLogo{
+    float: left;
+    width: 250px;
+}
 .cabecera{
     height: 10%;
     display: flex;
@@ -21,6 +33,9 @@ th, td{
     align-content: center;
     justify-content: space-between;
     align-items: stretch;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 3%;
 }
 .loginRegisterVender{
     display: flex;
@@ -36,17 +51,18 @@ th, td{
     height: 20%;
     text-decoration: none;
     color: black;
-    background: whitesmoke;    
+    background: #FFC300;    
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgb(97, 97, 97);
+    border: 1px solid #A07C00;
     border-radius: 3px;
     box-shadow: 2px 2px 10px #666;
+    font-family: arial;
 }
 .btnlrv:hover{
     cursor: pointer;
-    background: rgb(58, 56, 56);   
+    background: #A07C00;   
     color: white;
     border: 1px solid whitesmoke;
 }
@@ -54,6 +70,16 @@ th, td{
     margin-top: 15%;
 }
 
+/*CONTENIDO GENERAL*/
+.content{    
+    margin-top: 3%;
+    background: #D1A100;
+    border: 5px solid #A07C00;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
 /*CONTENIDO*/
 #tituloPrecio{
     display: flex;
@@ -67,12 +93,6 @@ th, td{
 }
 #tituloPrecio h1{
     margin: 0px;
-}
-.content{    
-    margin-top: 3%;
-    background: lightslategray;
-    padding: 20px;
-    border: 2px solid black;
 }
 .contenedorImagenesCoche{    
     display: flex;
@@ -142,19 +162,53 @@ th, td{
     color: white;
     border: 1px solid whitesmoke;
 }
-
+/*ANUNCIOS PROPIOS (SLIDER)*/
+.anunciosPropios{
+    background: #747272;
+    margin: 2%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid black;
+}
+.anunciosPropios a{
+    width: 20%;
+    text-decoration: none;
+    background: #414141;
+    height: 80%;
+    color: whitesmoke;
+    font-family: arial;
+}
 /*PIE DE PAGINA*/
+.pie{
+    width: 100%;
+}
+.divPie{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .pie a{
     display: flex;
     align-content: center;
     justify-content: center;
     text-decoration: none;
     font-family: cursive;
-    border: 1px solid lightgrey;
+    border: 1px solid #414141;
+    width: 15%;
+    font-family: arial;
+    color: whitesmoke;
 }
 .pie a:hover{
-    background: black;
-    color: whitesmoke;
+    background: #FFC300;
+    box-shadow: 10px 10px 60px #ffc300;
+    color: black;
     border: 1px solid grey;
     border-radius: 15px;
     cursor: pointer;

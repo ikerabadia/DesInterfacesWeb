@@ -7,10 +7,10 @@
   <link rel="stylesheet" type="text/css" href="contacto.css" />
 </head>
 
-<body style="background: red">
+<body>
   <div class="cabecera">
-    <a href="./prueba1.html"><img src="img/logo.PNG" style="float: left; width: 220px" /></a>
-    <h1 style="font-size: 55px;">TRADECAR</h1>
+    <a href="./prueba1.html"><img src="img/logo.PNG" class="imgLogo"/></a>
+    <h1 class="tituloGeneral">TRADECAR</h1>
     <div class="loginRegisterVender">
       <a class="btnlrv">login </a>
       <a class="btnlrv btnRegisterVender" href="./Registro.html">register</a>
@@ -20,24 +20,29 @@
 
   <div class="content">
     <form action="/action_page.php">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre"><br>
+      <label for="email">Correo Electronico:</label><br>
+      <input type="mail" id="email" name="email"><br>
+      <label for="telefono">Telefono contacto:</label><br>
+      <input type="tel" id="telefono" name="telefono"><br>
       <label for="asunto">Asunto:</label><br>
       <input type="text" id="asunto" name="asunto"><br>
       <label for="mensaje">Mensaje:</label><br>
-      <textarea id="mensaje" name="mensaje" style="width: 60%;height: 150px;"></textarea><br><br>
+      <textarea id="mensaje" name="mensaje"></textarea><br><br>
       <input type="submit" value="Enviar">
     </form>
   </div>
-  <hr>
-  <div class="pie" style="margin-top: 60px; position: absolute; left: 0px; right: 0px">
-    <table style="width: 100%" border="1">
-      <tr style="height: 60px; background: lightgray">
-        <td><a>Ayuda </a></td>
-        <td><a>Quienes somos </a></td>
-        <td><a>Coockies</a></td>
-        <td><a>Privacidad </a></td>
-        <td><a>Contacto</a></td>
-      </tr>
-    </table>
+  <div class="pie">
+    <div class="divPie">
+        <a>Ayuda </a>
+        <a>Quienes somos </a>
+        <a>Cookies</a>
+        <a>Privacidad </a>
+        <a>Contacto</a>
+        <a href="multimedia.html">Multimedia</a>
+        <a href="animaciones.html">Animaciones</a>
+    </div>
   </div>
 </body>
 

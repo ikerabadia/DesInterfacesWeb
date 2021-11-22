@@ -1,0 +1,150 @@
+/*GENERALES*/
+body{
+    background: #414141;
+    margin:0px;
+}
+table{
+    border: 3px solid black;
+    border-collapse: collapse;
+    background: #747272;
+}
+.tituloGeneral{
+    font-size: 55px;
+    background: #FFC300;
+    box-shadow: 10px 10px 60px #ffc300;
+    border-radius: 68px;
+    padding: 15px;
+    font-family: arial;
+}
+/*Cabecera*/
+.imgLogo{
+    float: left;
+    width: 250px;
+}
+.cabecera{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+.loginRegisterVender{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    width: 10%;
+}
+.btnlrv{
+    width: 100%;
+    height: 20%;
+    text-decoration: none;
+    color: black;
+    background: #FFC300;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #A07C00;
+    border-radius: 3px;
+    box-shadow: 2px 2px 10px #666;
+    font-family: arial;
+}
+.btnlrv:hover{
+    cursor: pointer;
+    background: #A07C00;   
+    color: white;
+    border: 1px solid whitesmoke;
+}
+.btnRegisterVender{
+    margin-top: 15%;
+}
+
+/*CIRCUITO CARRERAS*/
+#circuitoCarreras{
+
+}
+#cocheNaranja{
+    position: absolute;
+    width: 50px;
+    top: 430px;
+    left: 437px;
+    offset-path: path("M724 1H606.5C462.5 5.83333 161 14 107 8C53 2 35.8333 38.8333 34 58C40.3333 86.8333 49.2 147.2 34 158C15 171.5 -0.500008 248.5 0.999992 293.5C2.49999 338.5 68.5 331 154 334C222.4 336.4 230.167 397.333 225.5 427.5C236 505.5 191.5 434 154 566C140.5 672.5 267 631.833 298.5 591L313 400.5C286 375.833 299.948 363.791 329.5 284C344.5 243.5 420.5 279 460 284C491.6 288 483.5 352.333 475.5 384C432.833 464.167 383.5 617.8 527.5 591C707.5 557.5 775 713 901 624.5C1001.8 553.7 943 482 901 455C852.166 451.167 734.5 441.6 654.5 434C574.5 426.4 553.167 337.167 552.5 293.5C562.5 270.833 610.8 219.5 724 195.5C837.2 171.5 771.167 55.8333 724 1Z");
+    animation: cocheNaranja 3s linear 3;
+}
+#cocheVerde{
+    position: absolute;
+    width: 50px;
+    top: 331px;
+    left: 393px;
+    offset-path: path("M657 15H537.5L208.5 1.5C188.333 9.5 139.9 35.2 107.5 74C103.5 120.5 58.5 148 49.5 159.5C42.3 168.7 46.5 226.667 49.5 254.5C41.8333 271 26.5 307.2 26.5 320C17 314 12 332.5 1.5 385.5C18.3 403.1 50.1667 417.167 64 422C84.8333 422.333 139 424.6 189 431C239 437.4 240.167 483 234.5 505C219.333 534.5 184.8 607.1 168 661.5C170 716 166 686 227.5 728C279.5 742.4 301.833 712.333 306.5 695.5C308.167 672 313.2 606.9 320 534.5C316 450.5 328 448 335.5 385.5C361.1 356.3 416.167 358.667 440.5 363.5C455.833 375.667 488.6 407.5 497 437.5C505.5 452 492.5 473 472 516.5C441 539.5 445 542.5 429 593.5C432.2 634.3 484.667 672.167 510.5 686C602.5 696.167 801.4 718.8 861 728C916.6 723.2 944.833 698 952 686C958.833 668.333 968.4 625.1 952 593.5C931.5 554 905 550 888.5 542.5C875.3 536.5 728.667 530.333 657 528C637 514.167 593.2 480 578 454C562.8 428 571.667 382.833 578 363.5C592.667 340.333 638.4 292.3 704 285.5C786 277 791.5 218 791.5 177C783 147.5 767.5 119 729 80.5C721.4 42.1 677.833 20.8333 657 15Z");
+    animation: cocheVerde 4s linear 3;
+}
+@keyframes cocheNaranja {
+    0%{
+        offset-distance: 0;
+    }
+    100%{
+        offset-distance: 100%;
+    }
+}
+@keyframes cocheVerde {
+    0%{
+        offset-distance: 0;
+    }
+    100%{
+        offset-distance: 100%;
+    }
+}
+
+
+
+/*CONTENIDO GENERAL*/
+.content{    
+    margin-top: 3%;
+    background: #D1A100;
+    border: 5px solid #A07C00;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 840px;
+}
+/*PIE DE PAGINA*/
+.pie{
+    width: 100%;
+}
+.divPie{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pie a{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: cursive;
+    border: 1px solid #414141;
+    width: 15%;
+    font-family: arial;
+    color: whitesmoke;
+}
+.pie a:hover{
+    background: #FFC300;
+    box-shadow: 10px 10px 60px #ffc300;
+    color: black;
+    border: 1px solid #ffc300;
+    border-radius: 15px;
+    cursor: pointer;
+}
+

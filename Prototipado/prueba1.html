@@ -28,82 +28,80 @@
       </div>
       <div class="divFiltrosTabla">
         <h2 class="tituloFiltros">Sistema de busqueda avanzado</h2>
-        <table class="filtrosTabla">
-          <tr>
-            <td colspan="2" width="100%">
+        <div class="filtrosTabla">
+          <div class="primeraFilaFiltros">
               <input type="text" id="filtrosBuscador" name="buscador" placeholder="buscador"/>
-            </td>
-          </tr>
-          <tr>
-            <td width="50%">
-              <select name="marca" width="100%">
-                <option value="marca">Marca</option>
-                <option value="marca1">Marca1</option>
-                <option value="marca2">Marca2</option>
-                <option value="marca3">Marca3</option>
-                <option value="marca4">Marca4</option>
-                <option value="marca5">Marca5</option>
-              </select>
-            </td>
-            <td width="50%">
-              <select name="tipoCambio" width="100%">
-                <option value="Tipo de cambio">Tipo de cambio</option>
-                <option value="Automatico">Automatico</option>
-                <option value="Manual"></option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td width="50%">
-              <select name="modelo" width="100%">
-                <option value="Modelo">Modelo</option>
-                <option value="Modelo1">Modelo1</option>
-                <option value="Modelo2">Modelo2</option>
-                <option value="Modelo3">Modelo3</option>
-                <option value="Modelo4">Modelo4</option>
-                <option value="Modelo5">Modelo5</option>
-              </select>
-            </td>
-            <td width="50%">
-              <select name="potencia" width="100%">
-                <option value="Potencia">Potencia</option>
-                <option value="100cv">100cv</option>
-                <option value="150cv">150cv</option>
-                <option value="200cv">200cv</option>
-                <option value="250cv">250cv</option>
-                <option value="300cv">300cv</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td width="50%">
-              <input type="number" placeholder="Año" name="año"/>
-            </td>
-            <td width="50%">
-              <input type="number" placeholder="Precio Maximo" name="precioMaximo"/>
-            </td>
-          </tr>
-          <tr>
-            <td width="50%">
-              <select name="ciudad" width="100%">
-                <option value="Ciudad">Ciudad</option>
-                <option value="Ciudad1">Ciudad1</option>
-                <option value="Ciudad2">Ciudad2</option>
-                <option value="Ciudad3">Ciudad3</option>
-                <option value="Ciudad4">Ciudad4</option>
-                <option value="Ciudad5">Ciudad5</option>
-              </select>
-            </td>
-            <td width="50%">
-              <input type="number" placeholder="Km maximos" name="km"/>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2" width="100%">
+          </div>
+          <div class="segundaFilaFiltros">
+            <div class="filaBuscador">
+              <div id="divMarca" class="itemBuscador">
+                <select name="marca" width="100%">
+                  <option value="marca">Marca</option>
+                  <option value="marca1">Marca1</option>
+                  <option value="marca2">Marca2</option>
+                  <option value="marca3">Marca3</option>
+                  <option value="marca4">Marca4</option>
+                  <option value="marca5">Marca5</option>
+                </select>
+              </div>
+              <div id="divTipoCamvbio" class="itemBuscador">
+                <select name="tipoCambio" width="100%">
+                  <option value="Tipo de cambio">Tipo de cambio</option>
+                  <option value="Automatico">Automatico</option>
+                  <option value="Manual"></option>
+                </select>
+              </div>
+            </div>
+            <div class="filaBuscador">
+              <div id="divModelo" class="itemBuscador">
+                <select name="modelo" width="100%">
+                  <option value="Modelo">Modelo</option>
+                  <option value="Modelo1">Modelo1</option>
+                  <option value="Modelo2">Modelo2</option>
+                  <option value="Modelo3">Modelo3</option>
+                  <option value="Modelo4">Modelo4</option>
+                  <option value="Modelo5">Modelo5</option>
+                </select>
+              </div>
+              <div id="divPotencia" class="itemBuscador">
+                <select name="potencia" width="100%">
+                  <option value="Potencia">Potencia</option>
+                  <option value="100cv">100cv</option>
+                  <option value="150cv">150cv</option>
+                  <option value="200cv">200cv</option>
+                  <option value="250cv">250cv</option>
+                  <option value="300cv">300cv</option>
+                </select>
+              </div>
+            </div>
+            <div class="filaBuscador">
+              <div id="divAño" class="itemBuscador">
+                <input type="number" placeholder="Año" name="año"/>
+              </div>
+              <div id="divPrecioMaximo" class="itemBuscador">
+                <input type="number" placeholder="Precio Maximo" name="precioMaximo"/>
+              </div>
+            </div>
+            <div class="filaBuscador">
+              <div id="divCiudad" class="itemBuscador">
+                <select name="ciudad" width="100%">
+                  <option value="Ciudad">Ciudad</option>
+                  <option value="Ciudad1">Ciudad1</option>
+                  <option value="Ciudad2">Ciudad2</option>
+                  <option value="Ciudad3">Ciudad3</option>
+                  <option value="Ciudad4">Ciudad4</option>
+                  <option value="Ciudad5">Ciudad5</option>
+                </select>
+              </div>
+              <div id="DivKMMaximos" class="itemBuscador">
+                <input type="number" placeholder="Km maximos" name="km"/>
+              </div>
+            </div>
+          </div>          
+          <div id="terceraFilaFiltros">
               <a width="100%" id="botonBuscarFiltros" href="./pagListadoCoches.html">Buscar</a>
-            </td>
-          </tr>
-        </table>
+          </div>
+        </div>
       </div>
     </div>
     <div class="sugerencias">

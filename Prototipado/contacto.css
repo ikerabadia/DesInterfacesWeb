@@ -1,13 +1,26 @@
 /*GENERALES*/
 body{
-    padding-left: 10%;
-    padding-right: 10%;
+    background: #414141;
+    margin:0px;
 }
 table{
     border: 3px solid black;
     border-collapse: collapse;
+    background: #747272;
+}
+.tituloGeneral{
+    font-size: 55px;
+    background: #FFC300;
+    box-shadow: 10px 10px 60px #ffc300;
+    border-radius: 68px;
+    padding: 15px;
+    font-family: arial;
 }
 /*Cabecera*/
+.imgLogo{
+    float: left;
+    width: 250px;
+}
 .cabecera{
     height: 10%;
     display: flex;
@@ -16,6 +29,9 @@ table{
     align-content: center;
     justify-content: space-between;
     align-items: stretch;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 3%;
 }
 .loginRegisterVender{
     display: flex;
@@ -31,41 +47,68 @@ table{
     height: 20%;
     text-decoration: none;
     color: black;
-    background: whitesmoke;    
+    background: #FFC300;    
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgb(97, 97, 97);
+    border: 1px solid #A07C00;
     border-radius: 3px;
     box-shadow: 2px 2px 10px #666;
+    font-family: arial;
 }
 .btnlrv:hover{
     cursor: pointer;
-    background: rgb(58, 56, 56);   
+    background: #A07C00;   
     color: white;
     border: 1px solid whitesmoke;
 }
 .btnRegisterVender{
     margin-top: 15%;
 }
+#mensaje{
+    max-height: 240px;
+    max-width: 500px;
+}
 
 /*CONTENIDO GENERAL*/
 .content{    
     margin-top: 3%;
+    background: #D1A100;
+    border: 5px solid #A07C00;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /*PIE DE PAGINA*/
+.pie{
+    width: 100%;
+}
+.divPie{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .pie a{
     display: flex;
     align-content: center;
     justify-content: center;
     text-decoration: none;
     font-family: cursive;
-    border: 1px solid lightgrey;
+    border: 1px solid #414141;
+    width: 15%;
+    font-family: arial;
+    color: whitesmoke;
 }
 .pie a:hover{
-    background: black;
-    color: whitesmoke;
+    background: #FFC300;
+    box-shadow: 10px 10px 60px #ffc300;
+    color: black;
     border: 1px solid grey;
     border-radius: 15px;
     cursor: pointer;
