@@ -1,13 +1,26 @@
 /*GENERALES*/
 body{
-    padding-left: 10%;
-    padding-right: 10%;
+    background: #414141;
+    margin:0px;
 }
 table{
     border: 3px solid black;
     border-collapse: collapse;
+    background: #747272;
+}
+.tituloGeneral{
+    font-size: 55px;
+    background: #FFC300;
+    box-shadow: 10px 10px 60px #ffc300;
+    border-radius: 68px;
+    padding: 15px;
+    font-family: arial;
 }
 /*Cabecera*/
+.imgLogo{
+    float: left;
+    width: 250px;
+}
 .cabecera{
     height: 10%;
     display: flex;
@@ -16,6 +29,9 @@ table{
     align-content: center;
     justify-content: space-between;
     align-items: stretch;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 3%;
 }
 .loginRegisterVender{
     display: flex;
@@ -31,17 +47,18 @@ table{
     height: 20%;
     text-decoration: none;
     color: black;
-    background: whitesmoke;    
+    background: #FFC300;    
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgb(97, 97, 97);
+    border: 1px solid #A07C00;
     border-radius: 3px;
     box-shadow: 2px 2px 10px #666;
+    font-family: arial;
 }
 .btnlrv:hover{
     cursor: pointer;
-    background: rgb(58, 56, 56);   
+    background: #A07C00;   
     color: white;
     border: 1px solid whitesmoke;
 }
@@ -51,9 +68,69 @@ table{
 /*CONTENIDO GENERAL*/
 .content{    
     margin-top: 3%;
+    background: #D1A100;
+    border: 5px solid #A07C00;
+    
 }
 
 /*Tabla de filtros*/
+.divParrafoInformativo{
+    width: 48%;
+    text-align: center;
+    font-size: 32px;
+    margin-right: 2%;
+    background: #FFC300;
+    border-radius: 115px;
+    padding: 20px;
+    box-shadow: 10px 10px 60px #ffc300;
+    font-style: italic;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+}
+.filtros{
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.tituloFiltros{
+    font-family: arial;
+    font-size: 30px;
+    text-align: center;
+}
+.divFiltrosTabla{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.filtrosTabla{
+    border: 3px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #414141;
+}
+.filaBuscador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.itemBuscador{
+    width: 100%;
+}
+.filtrosTabla td{
+    border: 1px solid #414141;
+}
 .filtrosTabla input, .filtrosTabla select, .filtrosTabla a{
     width: 80%;
     height: 40px;
@@ -63,6 +140,7 @@ table{
     border: 0px;
     text-align: center;
     display: block;
+    border: 1px solid #A07C00;
 }
 #filtrosBuscador{
     width: 90%;
@@ -71,65 +149,322 @@ table{
     width: 90%;
     text-decoration: none;
     color: black;
-    background: white;    
+    background: #FFC300;    
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid whitesmoke;
+    border: 1px solid #A07C00;
+    font-family: arial;
 }
 #botonBuscarFiltros:hover{
     cursor: pointer;
-    background: rgb(58, 56, 56);   
+    background: #A07C00;   
     color: white;
     border: 1px solid whitesmoke;
 }
 
 /*Categorias*/
-
-#tablaSugerencias td{
-    padding: 0.5%;
-}
-#tablaSugerencias td:hover{
-    padding: 0.5%;
-    background: black;
-}
-#tablaSugerencias p{
-    margin-top: 0px;
-    margin-bottom: 0px;
+.sugerencias{
+    margin-top: 5%;
+    background: #747272;
+    margin-left: 0%;
+    margin-right: 0%;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    flex-direction: column;
+    padding: 1%;
+}
+.tituloCategorias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: arial;
+    font-size: 30px;
+}
+.sugerencias a{
     text-decoration: none;
-    color: black;
-    background: whitesmoke;
-    border-radius: 15px;
 }
-.tablaSugerenciasLink{
-    box-shadow: 2px 2px 10px #666;
-}
-.imgCategorias{
+.filaSugerencias{
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    height: 250px;
+    justify-content: space-evenly;
+}
+.sugerencia{
+    width: 33%;
+    background: black;
+    color: whitesmoke;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;    
+}
+.sugerencia p{
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+    margin: 0px;
+    color: whitesmoke;
+    font-family: arial;
+    margin-top: 10px;
+}
+.sugerencia:hover{
+    background: whitesmoke;
+}
+.sugerencia:hover p {
+    color: black;
 }
 .divImgCategorias{
     width: 100%;
     height: 250px;
     overflow: hidden;
+    background-size: cover;
+}
+#divImgSegundaMano{
+    background-image: url('img/logoCochesSegundaMano.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#divImgOcasion{
+    background-image: url('img/logoCochesOcasion.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#divImgTodoterrenos{
+    background-image: url('img/logoCochesTodoterreno.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#divImgKm0{
+    background-image: url('img/logoCochesKm0.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#divImgDeportivos{
+    background-image: url('img/logoCochesDeportivos.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#divImgFurgonetas{
+    background-image: url('img/logoCochesFurgonetas.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#divImgNuevos{
+    background-image: url('img/logoCochesNuevos.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#divImgFamiliares{
+    background-image: url('img/logoCochesFamiliares.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#divImgClasicos{
+    background-image: url('img/logoCochesClasicos.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/*ANUNCIOS PROPIOS (SLIDER)*/
+.anunciosPropios{
+    background: #747272;
+    margin: 2%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid black;
+}
+.anunciosPropios a{
+    width: 20%;
+    text-decoration: none;
+    background: #414141;
+    height: 80%;
+    color: whitesmoke;
+    font-family: arial;
+}
+/*REGISTRO*/
+.registro{
+    box-shadow: 0px 0px 120px 208px gold;
+    position: fixed;
+    width: 40%;
+    height: 50%;
+    left: 30%;
+    top: 25%;
+    border: 2px solid lightgrey;
+    background-color: whitesmoke;
 }
 
 /*PIE DE PAGINA*/
+.pie{
+    width: 100%;
+}
+.divPie{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .pie a{
     display: flex;
     align-content: center;
     justify-content: center;
     text-decoration: none;
     font-family: cursive;
-    border: 1px solid lightgrey;
+    border: 1px solid #414141;
+    width: 15%;
+    font-family: arial;
+    color: whitesmoke;
 }
 .pie a:hover{
-    background: black;
-    color: whitesmoke;
+    background: #FFC300;
+    box-shadow: 10px 10px 60px #ffc300;
+    color: black;
     border: 1px solid grey;
     border-radius: 15px;
     cursor: pointer;
 }
+
+/*ESTILOS MODO MOVIL*/
+@media (max-width: 750px) {
+
+    /*CABECERA*/
+    .imgLogo {
+        display: none;
+    }
+    .tituloGeneral {
+        font-size: 25px;
+        background: #FFC300;
+        box-shadow: 10px 10px 60px #ffc300;
+        border-radius: 68px;
+        padding: 15px;
+    }
+    
+
+    .cabecera {
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        width: 96%;
+        margin: 0 auto;
+        margin-top: 3%;
+        align-items: center;
+    }
+
+    .loginRegisterVender{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: stretch;
+        width: 30%;
+    }
+
+    .btnlrv {
+        width: 100%;
+        height: 20px;
+        text-decoration: none;
+        color: black;
+        background: #FFC300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #A07C00;
+        border-radius: 3px;
+        box-shadow: 2px 2px 10px #666;
+        FONT-SIZE: 13PX;
+    }
+
+    /*FILTROS*/
+    .filtros{
+        width: 96%;
+        margin-left: 2%;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divParrafoInformativo{
+        width: 80%;
+        text-align: center;
+        font-size: 15px;
+        margin-right: 0%;
+        background: #FFC300;
+        border-radius: 115px;
+        padding: 20px;
+        box-shadow: 10px 10px 60px #ffc300;
+        font-style: italic;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divFiltrosTabla{
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    /*SUGERENCIAS*/
+    .filaSugerencias{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .sugerencia {
+        width: 100%;
+        background: black;
+        color: whitesmoke;
+        padding: 0px;
+        margin: 0px;
+        text-decoration: none;
+        margin-bottom: 5px;
+    }
+    .sugerencia p{
+        text-align: center;
+        font-size: 18px;
+        margin: 0px;
+        color: whitesmoke;
+    }
+    
+
+    /*PIE DE PAGINA*/
+    .divPie{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .pie a{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        text-decoration: none;
+        border: 0px solid lightgrey;
+        width: 100%;
+    }
+    
+}
+
