@@ -75,6 +75,11 @@ table{
     left: 370px;
     top: 434px;
 }
+#imgCircuito{
+    position: absolute;
+    left: 306px;
+    top: 365px;
+}
 
 @keyframes tamanoChispa {
     50%{
@@ -133,10 +138,10 @@ table{
     margin-top: 3%;
     background: #D1A100;
     border: 5px solid #A07C00;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     height: 600px;
 }
 

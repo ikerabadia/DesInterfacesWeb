@@ -68,13 +68,15 @@ table{
 
 /*CIRCUITO CARRERAS*/
 #circuitoCarreras{
-
+    position: absolute;
+    left: 374px;
+    top: 294px;
 }
 #cocheNaranja{
     position: absolute;
     width: 50px;
     top: 430px;
-    left: 437px;
+    left: 415px;
     offset-path: path("M724 1H606.5C462.5 5.83333 161 14 107 8C53 2 35.8333 38.8333 34 58C40.3333 86.8333 49.2 147.2 34 158C15 171.5 -0.500008 248.5 0.999992 293.5C2.49999 338.5 68.5 331 154 334C222.4 336.4 230.167 397.333 225.5 427.5C236 505.5 191.5 434 154 566C140.5 672.5 267 631.833 298.5 591L313 400.5C286 375.833 299.948 363.791 329.5 284C344.5 243.5 420.5 279 460 284C491.6 288 483.5 352.333 475.5 384C432.833 464.167 383.5 617.8 527.5 591C707.5 557.5 775 713 901 624.5C1001.8 553.7 943 482 901 455C852.166 451.167 734.5 441.6 654.5 434C574.5 426.4 553.167 337.167 552.5 293.5C562.5 270.833 610.8 219.5 724 195.5C837.2 171.5 771.167 55.8333 724 1Z");
     animation: cocheNaranja 3s linear 3;
 }
@@ -110,10 +112,10 @@ table{
     margin-top: 3%;
     background: #D1A100;
     border: 5px solid #A07C00;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     height: 840px;
 }
 /*PIE DE PAGINA*/

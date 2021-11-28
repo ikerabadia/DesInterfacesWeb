@@ -484,6 +484,39 @@ table{
         border: 0px solid lightgrey;
         width: 100%;
     }
+
+    /*ANUNCIOS PROPIOS*/
+    #anuncioNoResponsive1{
+        display: none;
+    }
+    #anuncioNoResponsive2{
+        display: none;
+    }
+    .anunciosPropios a{
+        width: 45%;
+        flex-direction: column;
+    }
+    .anuncio{
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 10px;
+        justify-content: space-between;
+    }
+    .imagenAnuncio{
+        width: 100%;
+    }
+    .datosAnuncio{
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .datosAnuncio p, .datosAnuncio h4{
+        margin: 3px;
+    }
     
 }
 

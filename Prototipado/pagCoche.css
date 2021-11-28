@@ -345,3 +345,152 @@ th, td{
     border-radius: 15px;
     cursor: pointer;
 }
+@media (max-width: 750px) {
+
+    /*CABECERA*/
+    .imgLogo {
+        display: none;
+    }
+    .tituloGeneral {
+        font-size: 25px;
+        background: #FFC300;
+        box-shadow: 10px 10px 60px #ffc300;
+        border-radius: 68px;
+        padding: 15px;
+    }
+    #titulo{
+        width: 75%;
+    }
+    #precio{
+        width: 25%;
+    }
+    #tituloPrecio{
+        font-size: 10px;
+    }
+    
+
+    .cabecera {
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        width: 96%;
+        margin: 0 auto;
+        margin-top: 3%;
+        align-items: center;
+    }
+
+    .loginRegisterVender{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: stretch;
+        width: 30%;
+    }
+
+    .btnlrv {
+        width: 100%;
+        height: 20px;
+        text-decoration: none;
+        color: black;
+        background: #FFC300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #A07C00;
+        border-radius: 3px;
+        box-shadow: 2px 2px 10px #666;
+        FONT-SIZE: 13PX;
+    }
+
+    /*CONTENIDO*/
+    .contenedorImagenesCoche{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0px;
+    }
+    .slideshow-container {
+        border: 0px;
+        border-bottom: 2px solid black;
+    }
+    .tablaCaracteristicasCoche {
+        width: 100%;
+    }
+    /*ANUNCIOS PROPIOS*/
+    #anuncioNoResponsive1{
+        display: none;
+    }
+    #anuncioNoResponsive2{
+        display: none;
+    }
+    .anunciosPropios a{
+        width: 45%;
+        flex-direction: column;
+    }
+    .anuncio{
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 10px;
+        justify-content: space-between;
+    }
+    .imagenAnuncio{
+        width: 100%;
+    }
+    .datosAnuncio{
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .datosAnuncio p, .datosAnuncio h4{
+        margin: 3px;
+    }
+
+    /*SUGERENCIAS*/
+    .filaSugerencias{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .sugerencia {
+        width: 100%;
+        background: black;
+        color: whitesmoke;
+        padding: 0px;
+        margin: 0px;
+        text-decoration: none;
+        margin-bottom: 5px;
+    }
+    .sugerencia p{
+        text-align: center;
+        font-size: 18px;
+        margin: 0px;
+        color: whitesmoke;
+    }
+
+    /*PIE DE PAGINA*/
+    .divPie{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .pie a{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        text-decoration: none;
+        border: 0px solid lightgrey;
+        width: 100%;
+    }
+    
+}

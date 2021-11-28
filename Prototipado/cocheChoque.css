@@ -69,6 +69,8 @@ table{
 /*COCHE CHOQUE*/
 #carretera{
     width: 1000px;
+    position: absolute;
+    right: 50px;
 }
 #coche{
     position: absolute;
@@ -96,12 +98,12 @@ table{
     width: 100px;
     position: absolute;
     top: 680px;
-    left: 85px;
+    right: 910px;
 }
 #copaArbol{
     position: absolute;
     width: 100px;
-    left: 85px;
+    right: 911px;
     top: 623px;
     animation: copaArbol 4s linear forwards;
 }
@@ -163,16 +165,16 @@ table{
 }
 @keyframes copaArbol {
     0%{
-        left: 85px;
+        right: 911px;
         top: 623px;
     }
     75%{
-        left: 85px;
+        right: 911px;
         top: 623px;
     }
     100%{
-        left: 162px;
-        top: 698px;
+        right: 834px;/*-77*/
+        top: 698px;  /*+75*/
     }
 }
 @keyframes abollado {
