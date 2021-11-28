@@ -291,8 +291,39 @@ table{
     height: 80%;
     color: whitesmoke;
     font-family: arial;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid black;
 }
-
+.anunciosPropios a:hover{
+    box-shadow: 0px 0px 20px black;
+}
+#imagenAnuncio1{
+    background-image: url(img/imgAnuncio1.jpg);
+    
+}
+#imagenAnuncio2{
+    background-image: url(img/imgAnuncio2.jpg);
+    
+}
+#imagenAnuncio3{
+    background-image: url(img/imgAnuncio3.jpg);
+    
+}
+#imagenAnuncio4{
+    background-image: url(img/imgAnuncio4.jpg);
+    
+}
+.imagenAnuncio{
+    width: 50%;
+    height: 90%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+}
 /*PIE DE PAGINA*/
 .pie{
     width: 100%;

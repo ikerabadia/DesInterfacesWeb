@@ -20,88 +20,163 @@
 
   <div class="content">
     <div id="tituloPrecio">
-      <h1>TITULO ANUNCIO COCHE</h1>
-      <h1>00000€</h1>
+      <h1>AUDI TT 45 TFSI 180kW quattro S tronic Coupe 3p.</h1>
+      <h1>47.990 €</h1>
     </div>
     <div class="contenedorImagenesCoche">
-      <img class="imagenesCoche" src="img/logo.PNG" />
+      <div>
+          <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="img/imgCoche1.PNG" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="img/imgCoche2.PNG" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="img/imgCoche3.PNG" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="img/imgCoche4.PNG" style="width:100%">
+          </div>
+
+            <!-- The dots/circles -->
+          <div class="puntitos">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+      </div>
+      <div class="contenedorContacto">
+        <h3>Contacta con el vendedor</h3>
+        <form action="/action_page.php">
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre" required><br>
+          <label for="email">Correo Electronico:</label><br>
+          <input type="mail" id="email" name="email" required><br>
+          <label for="telefono">Telefono contacto:</label><br>
+          <input type="tel" id="telefono" name="telefono" required><br>
+          <label for="asunto">Asunto:</label><br>
+          <input type="text" id="asunto" name="asunto" required><br>
+          <label for="mensaje">Mensaje:</label><br>
+          <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+          <input type="submit" value="Enviar">
+        </form>
+      </div>      
     </div>
 
     <div class="descripcion">
       <h2>DESCRIPCION ESCRITA POR EL VENDEDOR</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-        finibus mi elit, nec aliquam nulla rutrum ut. Ut commodo mauris justo,
-        in eleifend leo pharetra a. Morbi sed libero sed libero lobortis
-        dictum. Donec posuere risus ac neque ultrices congue. Curabitur
-        eleifend erat eu mauris ultricies facilisis. In facilisis, justo ut
-        maximus tempus, eros ligula condimentum leo, quis interdum libero dui
-        at nisi. In vehicula bibendum neque id interdum.
+        Aldauto Car, concesionario oficial Audi con tienda en Madrid y Toledo le ofrece vehículos de semi-estreno todos ellos con las siguientes características en común:<br>
+        * La mejor relación calidad - precio.<br>
+        * Vehículo integrado en el programa Audi Selection Plus de vehículos de ocasión Audi.<br>
+        * Financiación a su medida desde 36 hasta 72 meses.<br>
+        * Garantía Audi Selection Plus hasta 24 meses.<br>
+        * 289 puntos vitales de revisión de entrega.<br>
+        * Vehículos en perfecto estado de limpieza y desinfección.<br>
+        * Ventajosas campañas para financiar la compra.<br>
+        * Entregas a domicilio personalizadas en cualquier punto de la Península.<br>
+        * Valoramos su vehículo como parte de pago y sobrevaloramos si es Audi.<br>
+
+        El equipamiento, precio, color, km y las imágenes de este anuncio son orientativos y por lo tanto no vinculantes para el anunciante.
       </p>
     </div>
 
     <div class="caracteristicasCoche">
       <table class="tablaCaracteristicasCoche">
         <tr>
-          <td colspan="2" width="100%">
+          <td colspan="2" class="tituloCaracteristicas">
             <h3>CARACTERISTICAS VEHICULO</h3>
           </td>
         </tr>
         <tr>
           <td width="50%">
-            <p width="100%">Marca: "nombreMarca"</p>
+            <p width="100%">Marca: <b>Audi</b></p>
           </td>
           <td width="50%">
-            <p width="100%">Cambio: "Manual / Automatico"</p>
+            <p width="100%">Cambio: <b>Automatico</b></p>
           </td>
         </tr>
         <tr>
           <td width="50%">
-            <p width="100%">Modelo: "nombreModelo"</p>
+            <p width="100%">Modelo: <b>TT</b></p>
           </td>
           <td width="50%">
-            <p width="100%">Potencia: "potencia"</p>
+            <p width="100%">Potencia: <b>245 cv</b></p>
           </td>
         </tr>
         <tr>
           <td width="50%">
-            <p width="100%">Año: "0000"</p>
+            <p width="100%">Año: <b>2020</b></p>
           </td>
           <td width="50%">
-            <p width="100%">Combustible: "tipoCombustible"</p>
+            <p width="100%">Combustible: <b>Gasolina</b></p>
           </td>
         </tr>
         <tr>
           <td width="50%">
-            <p width="100%">Ciudad: "Ciudad"</p>
+            <p width="100%">Ciudad: <b>Toledo</b></p>
           </td>
           <td width="50%">
-            <p width="100%">Km recorridos: "000.000"</p>
+            <p width="100%">Km recorridos: <b>6521 km</b></p>
           </td>
         </tr>
         <tr>
           <td width="50%">
-            <p width="100%">Consumo urbano: "00L/100km"</p>
+            <p width="100%">Consumo urbano: <b>9 l/100km</b></p>
           </td>
           <td width="50%">
-            <p width="100%">Consumo extraurbano: "00L/100km"</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="celdaBtnVerMas" width="100%" colspan="2">
-            <a class="btnVerMas">ver más</a>
+            <p width="100%">Consumo extraurbano: <b>5.9 l/100km</b></p>
           </td>
         </tr>
       </table>
     </div>
-    <div class="divBtnContacto">
-      <a class="btnContacto" href="contacto.html">Contactar con "nombreVendedor"</a>
-    </div>
     <div class="anunciosPropios">
-      <a href="./pagCoche.html">Anuncio 1</a>
-      <a href="./pagCoche.html">Anuncio 2</a>
-      <a href="./pagCoche.html">Anuncio 3</a>
-      <a href="./pagCoche.html">Anuncio 4 </a>
+      <a href="./pagCoche.html">
+        <div id="imagenAnuncio1" class="imagenAnuncio"></div>            
+        <div class="datosAnuncio">
+          <h4>5500€</h4>
+          <p>CITROEN C4 5p</p>
+        </div>
+      </a>
+      <a href="./pagCoche.html">
+        <div id="imagenAnuncio2" class="imagenAnuncio"></div>            
+        <div class="datosAnuncio">
+          <h4>9450€</h4>
+          <p>BMW Serie 1 3p</p>
+        </div>
+      </a>
+      <a href="./pagCoche.html">
+        <div id="imagenAnuncio3" class="imagenAnuncio"></div>            
+        <div class="datosAnuncio">
+          <h4>25900€</h4>
+          <p>MITSUBISHI Montero 5p</p>
+        </div>
+      </a>
+      <a href="./pagCoche.html">
+        <div id="imagenAnuncio4" class="imagenAnuncio"></div>            
+        <div class="datosAnuncio">
+          <h4>1350€</h4>
+          <p>CITROEN Xsara 5p</p>
+        </div>
+      </a>
     </div>
   </div>  
   <div class="pie">
@@ -115,6 +190,7 @@
         <a href="animaciones.html">Animaciones</a>
     </div>
   </div>
+  <script src="pagCoche.js"></script>
 </body>
 
 </html>
