@@ -84,29 +84,73 @@ th, td{
     padding-top: 2%;
 }
 /*TETRAEDRO*/
-.tetraedro {
-    margin: 100px auto;
-    transform-style: preserve-3d;
-    transform: perspective(700px) rotateX(-30deg) rotateY(-30deg);      
-}
-.cara{
-    width: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;        
-}
-#cara1{
-    border-bottom: 100px solid red;
-}
-#cara2{
-    border-bottom: 100px solid blue;
-}
-#cara3{
-    border-bottom: 100px solid yellow;
-}
-#base{
-    border-bottom: 100px solid black;
-}
-
+h2{
+    text-align:center;
+    color:#666;
+    font-family:Helvetica;
+  }
+  div.espacio3D {
+    width: 200px;
+    height: 200px;
+    margin: 5em auto 0 auto;
+    /*border: 1px solid rgba(0,255,0,0.5);*/
+    position: relative;
+    perspective-origin: center -50%; /*punto desde donde se coloca la cÃ¡mara*/
+    perspective: 500px; /*area de distorsion de figura*/
+    transform: scale(0.90); /* tamaÃ±o de cubo */
+    margin-bottom: 200px;
+  }
+  
+  div.cubo3D {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;/* indica la perspectiva*/
+    transform: translateZ(-10px);
+    animation-name: gira;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+  }
+  aside.triangulo {
+       width: 0;
+       height: 0;
+       position: absolute;  
+  }
+  
+  
+  aside.cara2 { /* centro */
+    transform:  rotateY(120deg) translateZ(0px) translateY(0px) rotateX(35deg);
+    border-right: 150px solid transparent;
+       border-top: 150px solid transparent;
+       border-left: 150px solid transparent;
+       border-bottom: 150px solid rgba(15,115,145,0.45);
+  }
+  
+  aside.cara3 { /* Izquierda */
+    transform:  rotateY(-120deg) translateZ(0px) translateY(0px) rotateX(35deg);
+    border-right: 150px solid transparent;
+       border-top: 150px solid transparent;
+       border-left: 150px solid transparent;
+       border-bottom: 150px solid rgba(96,16,142,0.45);
+  }
+  
+  aside.cara4 { /* derecha */
+    transform:   rotateY(0deg) translateZ(0px) translateY(0px) rotateX(35deg);
+    border-right: 150px solid transparent;
+       border-top: 150px solid transparent;
+       border-left: 150px solid transparent;
+       border-bottom: 150px solid rgba(226,207,32,0.45);
+  }
+  
+  
+  @keyframes gira {
+    0% {
+      transform: translateZ(-100px) rotateY(0deg);
+    }
+    100% {
+      transform: translateZ(-100px) rotateY(360deg);
+    }
+  }
 /*PIE DE PAGINA*/
 .pie{
     width: 100%;
