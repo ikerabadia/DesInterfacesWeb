@@ -13,6 +13,7 @@ body{
     z-index: 2;
     height: 712px;
     width: 841px;
+    top: 0px;
 }
 /*VENTANA*/
 /*ARBOL*/
@@ -223,6 +224,254 @@ body{
 }
 /*BOLAS*/
 /*ARBOL*/
+
+/*TREN*/
+/*VIA*/
+#viaTren{
+  background: url("img/viasTrenMontadas.png");
+  width: 336px;
+  height: 315px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 644px;
+  left: 173px;
+}
+/*VIA*/
+/*LOCOMOTORA*/
+#locomotora{
+  background: url("img/locomotoraDerecha.png");
+  width: 46px;
+  height: 43px;
+  position: absolute;
+  top: 255px;
+  left: 200px;
+  animation: 10s animacionLocomotora linear infinite;
+}
+@keyframes animacionLocomotora {
+  0%{
+    background: url("img/locomotoraDerecha.png");
+    width: 46px;
+    height: 43px;
+    top: 255px;
+    left: 200px;    
+  }
+  7.9%{
+    background: url("img/locomotoraDerecha.png");
+    width: 46px;
+    height: 43px;
+  }
+  8%{
+    background: url("img/locomotoraArriba.png");
+    width: 37px;
+    height: 46px;
+    top: 255px;
+    left: 290px;
+  }  
+  27.9%{
+    background: url("img/locomotoraArriba.png");
+    width: 37px;
+    height: 46px;
+  } 
+  28%{
+    background: url("img/locomotoraIzquierda.png");
+    width: 46px;
+    height: 43px;
+    top: 43px;
+    left: 290px;
+  }
+  57.9%{
+    background: url("img/locomotoraIzquierda.png");
+    width: 46px;
+    height: 43px;
+  }
+  58%{
+    background: url("img/locomotoraAbajo.png");
+    width: 37px;
+    height: 46px;
+    top: 43px;
+    left: -3px;
+  }
+  77.9%{
+    background: url("img/locomotoraAbajo.png");
+    width: 37px;
+    height: 46px;
+  }
+  78%{
+    background: url("img/locomotoraDerecha.png");
+    width: 46px;
+    height: 43px;
+    top: 255px;
+    left: -3px;
+  }
+  100%{
+    width: 46px;
+    height: 43px;
+    top: 255px;
+    left: 200px;
+  }
+}
+/*LOCOMOTORA*/
+/*VAGONES*/
+#vagon1{
+  background: url("img/vagonDerecha.png");
+  width: 45px;
+  height: 43px;
+  position: absolute;
+  top: 255px;
+  left: 155px;
+  animation: 10s animacionVagon1 linear infinite;
+}
+@keyframes animacionVagon1 {
+  0%{
+    background: url("img/vagonDerecha.png");
+    width: 46px;
+    height: 43px;
+    top: 255px;
+    left: 155px;    
+  }
+  11.9%{
+    background: url("img/vagonDerecha.png");
+    width: 46px;
+    height: 43px;
+  }
+  12%{
+    background: url("img/vagonArriba.png");
+    width: 37px;
+    height: 46px;
+    top: 255px;
+    left: 290px;
+  }  
+  31.9%{
+    background: url("img/vagonArriba.png");
+    width: 37px;
+    height: 46px;
+  } 
+  32%{
+    background: url("img/vagonIzquierda.png");
+    width: 46px;
+    height: 43px;
+    top: 43px;
+    left: 290px;
+  }
+  61.9%{
+    background: url("img/vagonIzquierda.png");
+    width: 46px;
+    height: 43px;
+  }
+  62%{
+    background: url("img/vagonAbajo.png");
+    width: 37px;
+    height: 46px;
+    top: 43px;
+    left: -3px;
+  }
+  81.9%{
+    background: url("img/vagonAbajo.png");
+    width: 37px;
+    height: 46px;
+  }
+  82%{
+    background: url("img/vagonDerecha.png");
+    width: 46px;
+    height: 43px;
+    top: 255px;
+    left: -3px;
+  }
+  100%{
+    background: url("img/vagonDerecha.png");
+    width: 46px;
+    height: 43px;
+    top: 255px;
+    left: 155px; 
+  }
+}
+#vagon2{
+  background: url("img/vagonDerecha.png");
+  width: 45px;
+  height: 43px;
+  position: absolute;
+  top: 255px;
+  left: 110px;
+  animation: 10s animacionVagon2 linear infinite;
+}
+@keyframes animacionVagon2 {
+  0%{
+    background: url("img/vagonDerecha.png");
+    width: 46px;
+    height: 43px;
+    top: 255px;
+    left: 110px;   
+  }
+  15.9%{
+    background: url("img/vagonDerecha.png");
+    width: 46px;
+    height: 43px;
+  }
+  16%{
+    background: url("img/vagonArriba.png");
+    width: 37px;
+    height: 46px;
+    top: 255px;
+    left: 290px;
+  }  
+  35.9%{
+    background: url("img/vagonArriba.png");
+    width: 37px;
+    height: 46px;
+  } 
+  36%{
+    background: url("img/vagonIzquierda.png");
+    width: 46px;
+    height: 43px;
+    top: 43px;
+    left: 290px;
+  }
+  65.9%{
+    background: url("img/vagonIzquierda.png");
+    width: 46px;
+    height: 43px;
+  }
+  66%{
+    background: url("img/vagonAbajo.png");
+    width: 37px;
+    height: 46px;
+    top: 43px;
+    left: -3px;
+  }
+  85.9%{
+    background: url("img/vagonAbajo.png");
+    width: 37px;
+    height: 46px;
+  }
+  86%{
+    background: url("img/vagonDerecha.png");
+    width: 46px;
+    height: 43px;
+    top: 255px;
+    left: -3px;
+  }
+  100%{
+    background: url("img/vagonDerecha.png");
+    width: 46px;
+    height: 43px;
+    top: 255px;
+    left: 110px; 
+  }
+}
+#vagon3{
+  background: url("img/vagonDerecha.png");
+  width: 45px;
+  height: 43px;
+  position: absolute;
+  top: 255px;
+  left: 65px;
+}
+@keyframes animacionVagon3 {
+  
+}
+/*VAGONES*/
+/*TREN*/
 
 /*NIEVE*/
 #nieve {
